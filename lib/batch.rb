@@ -1,14 +1,17 @@
 require 'github'
+require 'sidekiq'
+require 'redis'
+require 'json'
 
 class Batch
 
   class ContributionChecker
     def run
-      notify unless has_any_contributions_at_date?(Date.today)
+      notify_no_contribution unless has_any_contributions_at_date?(Date.today)
     end
 
-    def notify
-      puts 'do not have any contributions today'
+    def notify_no_contribution
+      Notifier.current_notifier.notify('no_contribution', 'do not have any contributions today')
     end
 
     def has_any_contributions_at_date?(date)
@@ -28,6 +31,7 @@ class Batch
     def contributions
       @contributions ||= user.contributions
     end
+
   end
 
 end
