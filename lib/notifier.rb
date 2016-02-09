@@ -1,11 +1,12 @@
+require 'notifier/slack'
+
 class Notifier
 
   def self.current_notifier
-    Notifier.new
+    Notifier::Slack.new
   end
 
   def notify(type, message)
-
 
   end
 

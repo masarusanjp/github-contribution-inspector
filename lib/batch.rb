@@ -1,7 +1,7 @@
 require 'github'
-require 'sidekiq'
 require 'redis'
 require 'json'
+require 'notifier'
 
 class Batch
 
