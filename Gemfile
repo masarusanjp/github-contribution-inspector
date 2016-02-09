@@ -7,5 +7,5 @@ gem 'whenever', require: false
 gem 'redis'
 gem 'redis-namespace'
 gem 'json'
-gem 'sidekiq'
+gem 'slack-notifier'
 
