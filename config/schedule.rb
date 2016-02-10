@@ -18,3 +18,7 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+
+every 1.day, :at => '11:00 pm' do
+  command "ruby bin/check_my_contribution"
+end
