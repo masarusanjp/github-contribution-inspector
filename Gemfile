@@ -7,3 +7,6 @@ gem 'whenever', require: false
 gem 'json'
 gem 'slack-notifier'
 
+group :development do
+  gem "capistrano", "~> 3.4"
+end
