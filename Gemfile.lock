@@ -9,9 +9,6 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    redis (3.2.2)
-    redis-namespace (1.5.2)
-      redis (~> 3.0, >= 3.0.4)
     slack-notifier (1.5.1)
     whenever (0.9.4)
       chronic (>= 0.6.3)
@@ -23,8 +20,6 @@ DEPENDENCIES
   faraday
   json
   nokogiri
-  redis
-  redis-namespace
   slack-notifier
   whenever
 
