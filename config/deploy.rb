@@ -38,9 +38,3 @@ set :deploy_to, ENV["CONTRIBUTION_INSPECTOR_DEPLOY_TO"]
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-
-namespace :deploy do
-
-
-
-end
