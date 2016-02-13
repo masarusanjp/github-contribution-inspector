@@ -2,6 +2,8 @@
 
 lock '3.4.0'
 
+require 'whenever/capistrano'
+
 set :application, 'contribution-inspector'
 set :repo_url, 'git@github.com:masarusanjp/github-contribution-inspector.git'
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
