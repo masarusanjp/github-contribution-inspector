@@ -22,6 +22,7 @@ require 'capistrano/deploy'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
+require 'capistrano/rbenv'
 require 'capistrano/bundler'
 require 'whenever/capistrano'
 

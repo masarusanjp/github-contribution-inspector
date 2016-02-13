@@ -10,4 +10,5 @@ gem 'slack-notifier'
 group :development do
   gem "capistrano", "~> 3.4"
   gem "capistrano-bundler"
+  gem "capistrano-rbenv"
 end
