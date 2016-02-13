@@ -4,6 +4,7 @@ lock '3.4.0'
 
 set :application, 'contribution-inspector'
 set :repo_url, 'git@github.com:masarusanjp/github-contribution-inspector.git'
+set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
