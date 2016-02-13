@@ -6,6 +6,7 @@ require 'whenever/capistrano'
 
 set :application, 'contribution-inspector'
 set :repo_url, 'git@github.com:masarusanjp/github-contribution-inspector.git'
+set :whenever_roles, { :batch }
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 
 # Default branch is :master
@@ -39,4 +40,7 @@ set :deploy_to, ENV["CONTRIBUTION_INSPECTOR_DEPLOY_TO"]
 # set :keep_releases, 5
 
 namespace :deploy do
+
+
+
 end
